@@ -1,11 +1,141 @@
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Avatar</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet"> 
+  <style>
+    :root {
+      --ion-safe-area-top: 20px;
+      --ion-safe-area-bottom: 22px;
+    }
+
+    .images{
+      width: 50%;
+      height: auto;
+      margin-right:150px;
+    }
+    #icon{
+      width: 40%;
+      height: auto;
+    }
+    tr{
+      text-align: center;
+      padding: 5px;
+    }
+    .center{
+    margin-left: auto;
+    margin-right: auto;
+     width:60%;
+    }
+
+    .left{
+      width:100%;
+    }
+    
+    .right{
+      width: 100%;
+    }
+
+    .username{
+      color:white;
+      font-size: large;
+      font-style: bold;
+      font-family: 'Roboto', sans-serif;
+    }
+
+    hr{
+      border:1px solid white !important;
+      background: white !important;
+    }
+
+  </style>
+</head>
+
+  <ion-header>&nbsp;</ion-header>
+
+<ion-content fullscreen>
+  <table class="center">
+    <tr>
+      <th rowspan="4"> <ion-avatar class="ion-margin-start">
+        <img src="assets/users/brandon.png">
+      </ion-avatar></th>
+      <th class="username">Brandon Sullivan,</th>
+    </tr>
+    <tr>Get Your Shit Together!</tr>
+    <tr><ion-datetime displayFormat="MMM DD, YYYY" [(ngModel)]="myDate"></ion-datetime></tr>
+   </table>
+    
+   
+   <table><p style="margin-left:45px">Brandon, you've got shit to do...</p></table>
+
+   &nbsp;
+   <hr>
+   &nbsp;
+
+   <ion-list-header>Today...</ion-list-header>
+   <table class="left">
+     <tr>
+       <th rowspan="4"> <img src="assets/images/dog.png"></th>
+       <th colspan="4" style="width:60%">Walk this assclown</th>
+     </tr>
+     <tr>
+      <th>"Walk your POS before I do it for you"</th>
+     </tr>
+     <tr><ion-chip class="ion-margin-start">
+      <ion-avatar>
+        <img src="assets/users/max.jpg">
+      </ion-avatar>
+      <ion-label>Max Cannon</ion-label>
+    </ion-chip></tr>
+   </table>
+
+   &nbsp;
+   <hr>
+   &nbsp;
+
+   <table class="right">
+    <tr>
+      <th colspan="4" style="width:60%">Finish this damn assignment</th>
+      <th rowspan="4"> <img src="assets/images/assignment.png"></th>
+    </tr>
+    <tr>
+     <th>"Doing this will make you suck less."</th>
+    </tr>
+    <tr><ion-chip class="ion-margin-start">
+     <ion-avatar>
+       <img src="assets/users/adam.jpg">
+     </ion-avatar>
+     <ion-label>Adam Bennett</ion-label>
+   </ion-chip></tr>
+  </table>
+
+  &nbsp;
+  <hr>
+  &nbsp;
+
+   <table class="left">
+    <tr>
+      <th rowspan="4"> <img src="assets/images/jogging.png" ></th>
+      <th colspan="4" style="width:60%">Get off your phone and run 2 miles</th>
+    </tr>
+    <tr>
+     <th>"Yooooo! Let's goooo!"</th>
+    </tr>
+    <tr><ion-chip class="ion-margin-start">
+     <ion-avatar>
+       <img src="assets/users/jarne.jpg">
+     </ion-avatar>
+     <ion-label>Jarne Sennesael</ion-label>
+   </ion-chip></tr>
+  </table>
+   
 
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+   
 </ion-content>
+
+
+
+   
