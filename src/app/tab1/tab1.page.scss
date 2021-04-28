@@ -5,3 +5,41 @@
       }
     }
   }
+ion-toolbar{
+  --min-height:10vh;
+  --padding-start:10%;
+  --background:gray;
+  --color:white;
+}
+
+ion-thumbnail{
+  --border-radius: 50%;
+  --size:90px;
+}
+
+ion-content{
+  --background:#eee;
+}
+
+.center{
+  margin:auto;
+  width:90%;
+  padding:5px;
+  text-align: center;
+  font-weight:bold;
+  font-size:larger;
+}
+.right-align{
+  text-align: right;
+  color:white;
+  background-color:#999;
+  padding-right:2%;
+}
+
+ion-title{
+  text-align: left;
+}
+
+
+
+
