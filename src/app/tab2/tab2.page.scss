@@ -1,0 +1,23 @@
+ion-toolbar{
+    --background:gray;
+    --color:white;
+    text-align: center;
+  }
+
+ion-input{
+    --background: #eee;
+    --padding-start:5px;
+    border:1px solid #aaa;
+    margin-bottom:10px;
+}
+ion-datetime{
+    --padding-start:5px;
+    border:1px solid #aaa;
+    margin-bottom:10px;
+}
+ion-button{
+    width:48%;
+    margin:0 2px 0 2px;
+    height:40px;
+    
+}

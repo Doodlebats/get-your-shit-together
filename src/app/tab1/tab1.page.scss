@@ -10,15 +10,12 @@ ion-toolbar{
   --padding-start:10%;
   --background:gray;
   --color:white;
+  justify-content: flex-start;
 }
 
 ion-thumbnail{
   --border-radius: 50%;
   --size:90px;
-}
-
-ion-content{
-  --background:#eee;
 }
 
 .center{
@@ -37,9 +34,13 @@ ion-content{
 }
 
 ion-title{
-  text-align: left;
+  text-align:right;
+  padding:20px;
 }
 
+.name-text{
+  font-size: 20px;
+}
 
 
 

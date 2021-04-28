@@ -1,27 +1,34 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>Get Your Shit Together</ion-title>
+    <ion-title>Your Goals</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
   <ion-grid>
     <ion-row>
-      <ion-col size="12" 
+      <ion-col size="12"
         *ngFor="let photo of photoService.photos; index as position">
-        <ion-item>
-          <ion-thumbnail>
-            <ion-img [src]="photo.webviewPath"></ion-img>
-          </ion-thumbnail>
-          <ion-input color="black">Test Goal</ion-input>
-          <ion-button size="small" color="secondary" (click)="addGoal()">set goal</ion-button>
-          <ion-button (click)="addPhotoToGallery()">
-              <ion-icon name="camera"></ion-icon> Add Photo
-          </ion-button>
-          
-        </ion-item>
+        
+        <ion-card>
+          <ion-img [src]="photo.webviewPath"></ion-img>
+          <ion-card-content>      
+            <ion-input placeholder="Enter Goal"></ion-input>
+            <ion-datetime displayFormat="MMM DD, YYYY" placeholder="Pick a day to aim for."></ion-datetime>
+            <ion-button slot="start" color="secondary" (click)="addGoal()">Commit</ion-button>
+            <ion-button slot="end" color="tertiary" (click)="nothing()">
+                <ion-icon name="person-add-outline"></ion-icon>
+            </ion-button>
+          </ion-card-content>
+        </ion-card>
+
       </ion-col>
     </ion-row>
   </ion-grid>
-  
+  <ion-fab vertical="bottom" horizontal="center" slot="fixed">
+    <ion-fab-button (click)="addPhotoToGallery()">
+      <ion-icon name="add-outline"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+
 </ion-content>
