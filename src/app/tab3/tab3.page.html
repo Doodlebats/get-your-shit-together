@@ -1,17 +1,45 @@
-<ion-header [translucent]="true">
+<ion-header [translucent]="false">
   <ion-toolbar>
-    <ion-title>
-      Tab 3
+    <ion-thumbnail slot="start">
+      <img src="assets/users/brandon.png">
+    </ion-thumbnail>
+    <ion-title slot="end">
+      <span class="name-text">Brandon,</span> <br>
+      What are your lazy ass friends doing today?
     </ion-title>
   </ion-toolbar>
+  <div class="right-align">
+    <ion-datetime displayFormat="MMM DD, YYYY" [(ngModel)]="myDate" readonly="true"></ion-datetime>
+  </div>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 3</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content fullscreen>
+  <div class="center">
+    Tap an image to "encourage" your so-called friends.
+  </div>      
+    <ion-card>
+        <img src="assets/images/smoothieguy.png">
+        <ion-card-header>
+          <ion-card-title style="text-align:center;">Mike wants to make veggie smoothies</ion-card-title> 
+        </ion-card-header>
+    </ion-card>
 
-  <app-explore-container name="Tab 3 page"></app-explore-container>
+    <ion-card>
+      <img src="assets/images/guitargirl.png">
+      <ion-card-header>
+        <ion-card-title style ="text-align:center;">Allison is working on her chords.</ion-card-title> 
+      </ion-card-header>
+    </ion-card>
+
+    <ion-card>
+    <img src="assets/images/volunteergirl.png">
+    <ion-card-header>
+      <ion-card-title style ="text-align: center;">Sammy is doing volunteer work.</ion-card-title> 
+    </ion-card-header>
+    </ion-card>
+   
 </ion-content>
+
+
+
+   
