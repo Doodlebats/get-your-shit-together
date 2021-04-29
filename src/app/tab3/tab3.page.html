@@ -1,43 +1,43 @@
-<ion-header [translucent]="false">
+<ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-thumbnail slot="start">
-      <img src="assets/users/brandon.png">
-    </ion-thumbnail>
-    <ion-title slot="end">
-      <span class="name-text">Brandon,</span> <br>
       What are your lazy ass friends doing today?
-    </ion-title>
-  </ion-toolbar>
-  <div class="right-align">
-    <ion-datetime displayFormat="MMM DD, YYYY" [(ngModel)]="myDate" readonly="true"></ion-datetime>
-  </div>
+    
+  </ion-toolbar>  
 </ion-header>
 
 <ion-content fullscreen>
   <div class="center">
     Tap an image to "encourage" your so-called friends.
-  </div>      
-    <ion-card>
-        <img src="assets/images/smoothieguy.png">
+  </div>  
+  <ion-grid> 
+    <ion-row>
+      <ion-col size="md">
+          <ion-card button="true">
+              <img src="assets/images/smoothieguy.png">
+              <ion-card-header>
+                <ion-card-subtitle>Mike wants to make veggie smoothies</ion-card-subtitle> 
+              </ion-card-header>
+          </ion-card>
+      </ion-col>
+      <ion-col size="md">
+          <ion-card button="true">
+            <img src="assets/images/guitargirl.png">
+            <ion-card-header>
+              <ion-card-subtitle>Allison is working on her chords.</ion-card-subtitle> 
+            </ion-card-header>
+          </ion-card>
+        </ion-col>
+    
+      <ion-col size="md">
+        <ion-card button="true">
+        <img src="assets/images/volunteergirl.png">
         <ion-card-header>
-          <ion-card-title style="text-align:right;">Mike wants to make veggie smoothies</ion-card-title> 
+          <ion-card-subtitle>Sammy is doing volunteer work.</ion-card-subtitle> 
         </ion-card-header>
-    </ion-card>
-
-    <ion-card>
-      <img src="assets/images/guitargirl.png">
-      <ion-card-header>
-        <ion-card-title style ="text-align:right;">Allison is working on her chords.</ion-card-title> 
-      </ion-card-header>
-    </ion-card>
-
-    <ion-card>
-    <img src="assets/images/volunteergirl.png">
-    <ion-card-header>
-      <ion-card-title style ="text-align: right;">Sammy is doing volunteer work.</ion-card-title> 
-    </ion-card-header>
-    </ion-card>
-   
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>    
 </ion-content>
 
 

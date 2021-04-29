@@ -1,0 +1,35 @@
+
+ion-toolbar{
+    --min-height:10vh;
+    --background:gray;
+    --color:white;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    --padding-start:20px;
+    --padding-end:20px;
+}
+
+ion-thumbnail{
+--border-radius: 50%;
+--size:90px;
+}
+
+.name-text{
+font-size: 20px;
+}
+
+ion-grid{
+    --ion-grid-padding:0px;
+    --ion-grid-width:100%;
+}
+
+ion-col{
+    --ion-grid-column-padding:0px;
+}
+
+ion-card img{
+    width:100%;
+    max-height:300px;
+    object-fit: cover;
+}
