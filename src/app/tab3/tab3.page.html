@@ -6,36 +6,56 @@
 </ion-header>
 
 <ion-content fullscreen>
-  <div class="center">
-    Tap an image to "encourage" your so-called friends.
+  <div id="div" class="center">
+    <p style="color:rgb(70, 70, 70);">Tap an image to "encourage" your so-called friends.</p>
   </div>  
   <ion-grid> 
     <ion-row>
-      <ion-col size="md">
-          <ion-card button="true">
+
+      <ion-col class="center" size="md">
+          <ion-card button="true" (click)="addComment()">
               <img src="assets/images/smoothieguy.png">
               <ion-card-header>
                 <ion-card-subtitle>Mike wants to make veggie smoothies</ion-card-subtitle> 
               </ion-card-header>
           </ion-card>
+          <ion-list lines="none">
+            <form [formGroup]="myForm">
+              <ion-item *ngFor="let control of myForm.controls | keyvalue">
+                <ion-input required type="text" [formControlName]="control.key" placeHolder="Comment on this post"></ion-input>
+              </ion-item>
+            </form>
+          </ion-list>
       </ion-col>
-      <ion-col size="md">
-          <ion-card button="true">
+
+      <ion-col class="center" size="md">
+          <ion-card button="true" (click)="addComment2()">
             <img src="assets/images/guitargirl.png">
             <ion-card-header>
               <ion-card-subtitle>Allison is working on her chords.</ion-card-subtitle> 
             </ion-card-header>
           </ion-card>
+          <form [formGroup]="myForm2">
+            <ion-item *ngFor="let control of myForm2.controls | keyvalue">
+              <ion-input required type="text" [formControlName]="control.key" placeHolder="Comment on this post"></ion-input>
+            </ion-item>
+          </form>
         </ion-col>
     
-      <ion-col size="md">
-        <ion-card button="true">
+      <ion-col class="center" size="md">
+        <ion-card button="true" (click)="addComment3()">
         <img src="assets/images/volunteergirl.png">
         <ion-card-header>
           <ion-card-subtitle>Sammy is doing volunteer work.</ion-card-subtitle> 
         </ion-card-header>
         </ion-card>
+        <form [formGroup]="myForm3">
+          <ion-item *ngFor="let control of myForm3.controls | keyvalue">
+            <ion-input required type="text" [formControlName]="control.key" placeHolder="Comment on this post"></ion-input>
+          </ion-item>
+        </form>
       </ion-col>
+
     </ion-row>
   </ion-grid>    
 </ion-content>
